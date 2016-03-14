@@ -1,4 +1,4 @@
-// Configure a view object, to hold all our functions for dynamic updates and article-related event handlers.
+// Configure a view object, to hold all our functions for dynamic updates and project-related event handlers
 var projectView = {};
 
 projectView.populateFilters = function() {
@@ -34,12 +34,12 @@ projectView.handleAuthorFilter = function() {
   $('#author-filter').on('change', function() {
     if ($(this).val()) {
       var targetName = $(this).val();
-      $('project').hide();
-      $('project').each(function() {
+      $('article').hide(); 
+      $('article').each(function() {
         var name = $(this).attr('data-attribute');
         if (name === targetName) {
           $(this).show();
-        };
+        }
       });
 
       // $('article').filter($(this)['data-attribute']).show();
@@ -51,7 +51,7 @@ projectView.handleAuthorFilter = function() {
     } else {
       // TODO: If the select box was changed to an option that is blank, we should
       //       show all the articles, except the one article we are using as a template.
-      $('project').show();
+      $('article').show();
       //   $('article.template').hide();
       //   $('article').fadeIn();
 
