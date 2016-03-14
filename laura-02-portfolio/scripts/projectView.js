@@ -1,8 +1,8 @@
 // Configure a view object, to hold all our functions for dynamic updates and article-related event handlers.
-var articleView = {};
+var projectView = {};
 
-articleView.populateFilters = function() {
-  $('article').each(function() {
+projectView.populateFilters = function() {
+  $('project').each(function() {
     if (!$(this).hasClass('template')) {
       // DONE: We need to take every author name from the page, and make it an option in the Author filter.
       //       To do so, Build an `option` DOM element that we can append to the author select box.
@@ -30,17 +30,17 @@ articleView.populateFilters = function() {
 //       Use an "attribute selector" to find those articles, and fade them in for the reader.
 
 // grab the option "value", which is the author name
-articleView.handleAuthorFilter = function() {
+projectView.handleAuthorFilter = function() {
   $('#author-filter').on('change', function() {
     if ($(this).val()) {
       var targetName = $(this).val();
-      $('article').hide();
-      $('article').each(function() {
+      $('project').hide();
+      $('project').each(function() {
         var name = $(this).attr('data-attribute');
         if (name === targetName) {
           $(this).show();
         };
-      })
+      });
 
       // $('article').filter($(this)['data-attribute']).show();
 
@@ -51,7 +51,7 @@ articleView.handleAuthorFilter = function() {
     } else {
       // TODO: If the select box was changed to an option that is blank, we should
       //       show all the articles, except the one article we are using as a template.
-      $('article').show();
+      $('project').show();
       //   $('article.template').hide();
       //   $('article').fadeIn();
 
@@ -60,7 +60,7 @@ articleView.handleAuthorFilter = function() {
   });
 };
 
-articleView.handleCategoryFilter = function() {
+projectView.handleCategoryFilter = function() {
   // TODO: Just like we do for #author-filter above, we should handle change events on the #category-filter element.
   //       When an option with a value is selected, hide all the articles, then reveal the matches.
   //       When the blank (default) option is selected, show all the articles, except for the template.
@@ -69,24 +69,23 @@ articleView.handleCategoryFilter = function() {
     if ($(this).val()) {
       // grab the option "value", which is the author name
       var targetCategory = $(this).val();
-      $('article').hide();
+      $('project').hide();
 
-      $('article').each(function() {
+      $('project').each(function() {
         var name = $(this).attr('data-category');
         if (name === targetCategory) {
           $(this).show();
         };
-      })
-
-      } else {
-            $('article').show();
-            $('article.template').hide();
-          }
-          $('#author-filter').val('');
-        });
+      });
+    } else {
+      $('project').show();
+      $('project.template').hide();
+    }
+    $('#author-filter').val('');
+  });
 };
 
-articleView.handleMainNav = function() {
+projectView.handleMainNav = function() {
   // TODO: Add an event handler to .main-nav element that will power the Tabs feature.
   //       Clicking any .tab element should hide all the .tab-content sections, and then reveal the
   //       single .tab-content section that is associated with the clicked .tab element.
@@ -100,7 +99,7 @@ articleView.handleMainNav = function() {
   $('.main-nav .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
 };
 
-articleView.setTeasers = function() {
+projectView.setTeasers = function() {
   $('.article-body *:nth-of-type(n+2)').hide(); // Hide elements beyond the first 2 in any artcile body.
 
   // TODO: Add an event handler to reveal all the hidden elements,
@@ -108,7 +107,7 @@ articleView.setTeasers = function() {
   //       "Read On" link once it has been clicked. Be sure to prevent the default link-click action!
   //       Ideally, we'd attach this as just 1 event handler on the #articles section, and let it
   //       process any .read-on clicks that happen within child nodes.
-  $('#articles').on('click',function(ev){
+  $('#projects').on('click',function(ev){
     var $evTarget = $(ev.target);
     ev.preventDefault();
 
@@ -121,9 +120,9 @@ articleView.setTeasers = function() {
 
 // DONE: Call all of the above functions, once we are sure the DOM is ready.
 $(document).ready(function() {
-  articleView.populateFilters();
-  articleView.handleAuthorFilter();
-  articleView.handleCategoryFilter();
-  articleView.handleMainNav();
-  articleView.setTeasers();
+  projectView.populateFilters();
+  projectView.handleAuthorFilter();
+  projectView.handleCategoryFilter();
+  projectView.handleMainNav();
+  projectView.setTeasers();
 });
