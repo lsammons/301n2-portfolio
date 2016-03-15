@@ -1,12 +1,4 @@
-/* TODO: Give the site header a nice background color, from your selected color scheme. */
-
 /* MODULE: SITE HEADER */
-.site-header {
-  /*padding: .1em;
-  background-color: #ffff99;*/
-  /*margin:0px auto;*/
-}
-
 .main-nav {
   padding: 0;
   list-style: none;
@@ -21,18 +13,16 @@
   list-style-type: none;
 }
 
-/* TODO: Style the filters so they look good on small screens:
-    Use the full width, and remove the list bullet. */
-
+/* FILTER STYLES*/
 #filters {
   padding: 0;
+  list-style-type:none;
 }
-
 #filters select {
   width:100%;
 }
 
-/* hide the template */
+/* hides the template */
 .template {
   display: none;
 }

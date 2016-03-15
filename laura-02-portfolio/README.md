@@ -1,16 +1,17 @@
-Add:
+# Laura Sammons professional online presence
+# Web Design and Web Development Portfolio
 
-"read more / read less"
+This portfolio site that will highlight my projects and  interests, and showcase my skills to potential employers or clients.
 
-Have portfolio line up 2 or 3 across.
+This will be a static portfolio site to represent my personal online presence.
 
-eCommerce
-Drupal Website
-Wordpress Website
-Samsung Monitor design
-TPMG: Education Page design
-TPMG: Blood Band Page design
-Swedish Foundation: Drupal page design
-Swedish Foundation: eCards
-Swedish Foundation: new site for donations
-Swedish Foundation: Black Baud donation portal
+## User Stories: Minimum Viable Product (MVP)
+These user stories will guide my development:
+ 1. As a developer, I want my site to use valid and semantic markup, so that employers will love me.
+  - As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it, and abstract out the details for individual projects.
+  - As a developer, I want a contact form so visitors can contact me via my site.
+ 2. As the creator, I want the page to link to my LinkedIn and GitHub pages, so that visitors can follow me, and I can build my audience.
+  - As the creator, I want the Home and About nav links to act as tabs, so my story is revealed FAST.
+ 3. As a visitor, I want the site to look reasonable, so that I can read it on any device.
+  - As a visitor, I want the portfolio to show the newest projects on top so that I can easily see the developers recent work.
+  - As a visitor, I want relative timestamps on projects to give me a idea of how many days ago something was created.
