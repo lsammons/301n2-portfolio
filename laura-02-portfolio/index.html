@@ -2,82 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>02 Laura Sammons ~ Web Design and Development Portfolio</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
-    <div id="wrapper">
-      <header class="site-header">
-        <h1>
-          Laura Sammons, Seattle WA
-        </h1>
-        <p>Web Design and Development Portfolio/Blog</p>
-      </header>
-      <nav class="main-nav">
-        <ul>
-          <li class="tab icon-home" data-content="articles"><a href="#"> Home</a></li>
-          <li class="tab icon-plus" data-content="about"><a href="#"> About</a></li>
-          <li class="tab icon-power"><a href="http://linkedin.com/lsammons" target="_blank"> LinkedIn</a></li>
-          <li class="icon-github"><a href="http://github.com/lsammons" target="_blank"> GitHub</a></li>
-        </ul>
-      </nav>
-      <main>
-        <section id="articles" class="tab-content">
-          <div>
-            <ul id="filters">
-              <li>
-                <select id="author-filter">
-                  <option value="">-- Filter by Authors --</option>
-                </select>
-              </li>
-              <li>
-                <select id="category-filter">
-                  <option value="">-- Filter by Categories --</option>
-                </select>
-              </li>
-            </ul>
-          </div>
+    <header class="site-header">
+      <h1>
+        Kilovolt Blog!
+      </h1>
+      <p>The shocking power of static pages</p>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li class="tab icon-rocket" data-content="articles"><a href="#"> Home</a></li>
+        <li class="tab icon-power" data-content="about"><a href="#"> About</a></li>
+        <li class="icon-twitter3"><a href="http://twitter.com/brookr" target="_blank"> Twitter</a></li>
+        <li class="icon-github"><a href="http://github.com/brookr" target="_blank"> GitHub</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter by Authors --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
 
-          <article class="template template" data-category="cat">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                By <address><a href="">Author Name</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-
-            <section class="article-body"></section>
-            <a href="#" class="read-on">Read on &rarr;</a>
-          </article>
-        </section>
-
-        <section id="about" class="tab-content">
+        <article class="template template" data-category="cat">
           <header>
-            Welcome to Laura's Blog
+            <h1>Title</h1>
+            <div class="byline">
+              By <address><a href="">Author Name</a></address>
+              published <time pubdate datetime="2000-01-01">Publish Time</time>
+            </div>
           </header>
-          <section>
-            <h1>These are some of my interests:</h1>
-            <ul>
-              <li>Coding</li>
-              <li>Sharing what I've learned</li>
-              <li>Hanging with my family</li>
-            </ul>
-          </section>
 
+          <section class="article-body"></section>
+          <a href="#" class="read-on">Read on &rarr;</a>
+        </article>
+      </section>
+
+      <section id="about" class="tab-content">
+        <header>
+          Welcome to my Blog
+        </header>
+        <section>
+          <h1>Some of my intrests:</h1>
+          <ul>
+            <li>Coding</li>
+            <li>Sharing what I've learned</li>
+            <li>Hanging with my family</li>
+          </ul>
         </section>
-      </main>
-      <footer>
-        &copy;2016 Laura Sammons | Personal Portfolio | LinkedIn
-      </footer>
-    </div>
-      <script src="vendor/scripts/jquery/jquery-2.2.1.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-      <script src="./scripts/blogArticles.js"></script>
-      <script src="./scripts/article.js"></script>
-      <script src="./scripts/articleView.js"></script>
+
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="scripts/blogArticles.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
+
+
+    <!-- DONE: Link up the new js file that will manage the article "View". -->
   </body>
 </html>
