@@ -4,7 +4,6 @@
   list-style: none;
   clear: both;
 }
-
 .main-nav li {
   margin-right: .4em;
   font-size: 1.5em;
@@ -21,21 +20,17 @@
 #filters select {
   width:100%;
 }
-
 /* hides the template */
 .template {
   display: none;
 }
-
 .byline {
   color: #777;
 }
-
 .byline a {
   font-weight: bold;
   text-decoration: none;
 }
-
 .pull-left {
   float: left;
 }
