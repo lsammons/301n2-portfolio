@@ -40,14 +40,9 @@ articleView.handleAuthorFilter = function() {
         if (name === targetName) {
           $(this).show();
         };
-      })
-
+      });
       // $('article').filter($(this)['data-attribute']).show();
-
       // $('article[data-author="' + $(this).val() + '"]').fadeIn();`
-
-
-
     } else {
       // TODO: If the select box was changed to an option that is blank, we should
       //       show all the articles, except the one article we are using as a template.
@@ -76,14 +71,14 @@ articleView.handleCategoryFilter = function() {
         if (name === targetCategory) {
           $(this).show();
         };
-      })
+      });
 
-      } else {
-            $('article').show();
-            $('article.template').hide();
-          }
-          $('#author-filter').val('');
-        });
+    } else {
+      $('article').show();
+      $('article.template').hide();
+    }
+    $('#author-filter').val('');
+  });
 };
 
 articleView.handleMainNav = function() {
