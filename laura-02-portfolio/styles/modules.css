@@ -1,8 +1,10 @@
 /* TODO: Give the site header a nice background color, from your selected color scheme. */
 
+/* MODULE: SITE HEADER */
 .site-header {
-  padding: .1em;
-  background-color: #ffff99;
+  /*padding: .1em;
+  background-color: #ffff99;*/
+  /*margin:0px auto;*/
 }
 
 .main-nav {
@@ -30,6 +32,7 @@
   width:100%;
 }
 
+/* hide the template */
 .template {
   display: none;
 }
