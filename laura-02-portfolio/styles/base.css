@@ -14,16 +14,23 @@ blockquote:before, blockquote:after,q:before, q:after {content: ''; content: non
 table {border-collapse: collapse; border-spacing: 0;}
 strong {font-weight: 700;}
 em {font-style: italic;}
-/* General
+
+/* Element Styles
 ***********************/
-/*body {
+#about {
+  margin-top: 100px;
+}
+#wrapper {
+  margin:0px auto;
+}
+body {
 	font-size:16px;
 	line-height:22px;
 	height: auto;
 	font-family: Helvetica, sans-serif;
 	color:#373648;
 	background-color:#EEEFE5;
-	margin:0px auto;
+	/*margin:0px auto;*/
 }
 a:link {color: #d76713; text-decoration:none;}
 a:visited {color: #d76713; text-decoration:none;}
@@ -35,52 +42,11 @@ h1 {
 	color:#D56724;
 }
 .site-header {
-		width:94%;
-		max-width:1200px;
-		margin:0px auto;
+		/*width:94%;
+		max-width:1200px;*/
+		/*margin:0px auto;*/
 }
 
 footer {
   margin-top: 25px;
-}*/
-/* TODO: Add some coordinated colors to make the blog more distinguished:
-         Use an accent color for all links, and remove their underline. */
-
-body {
-  line-height: 1.5;
-  font-size: 100%;
-  color: #373648;
-  background-color: #EEEFE5;
-}
-
-hr {
-  margin: 1em;
-  width: 80%;
-}
-
-/*TEXT STYLES
-=======================================*/
-p {
-  font-size: 1em;
-}
-
-address {
-  display: inline-block;
-}
-
-/*LINK STYLES
-=======================================*/
-
-a, a:link, a:active {
-  text-decoration: none;
-  color: lightblue;
-}
-
-a:hover, a:focus {
-  /*background-color: green;
-  color:white;*/
-}
-
-a:visited {
-  color: #777;
 }
