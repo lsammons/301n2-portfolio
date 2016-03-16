@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>02 Laura Sammons ~ Web Design &amp; Development</title>
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/modules.css">
+  </head>
+  <body class="center-body">
+
+    <header class="site-header">
+      <h1>
+        Laura Sammons
+      </h1>
+      <p> ~ Web Design &amp; Development Portfolio</p>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li class="tab icon-rocket" data-content="articles"><a href="#"> Home</a></li>
+        <li class="tab icon-plus" data-content="about"><a href="#"> About</a></li>
+        <li class="icon-power"><a href="http://linkedin.com/in/laurasammons" target="_blank"> LinkedIn</a></li>
+        <li class="icon-github"><a href="http://github.com/lsammons" target="_blank"> GitHub</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter Projects by Category --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <article class="template template" data-category="cat">
+          <header>
+            <h1>Title</h1>
+            <div class="byline">
+              <address><a href="">Author Name</a></address>
+              published <time pubdate datetime="2000-01-01">Publish Time</time>
+            </div>
+          </header>
+
+          <section class="article-body"></section>
+          <a href="#" class="read-on">Read on &rarr;</a>
+        </article>
+      </section>
+
+      <section id="about" class="tab-content">
+        <header>
+          Welcome to My Portfolio
+        </header>
+        <section>
+          <h1>Some of my interests are:</h1>
+          <ul>
+            <li>Coding</li>
+            <li>Sharing what I've learned</li>
+            <li>Hanging with my family</li>
+          </ul>
+        </section>
+      </section>
+
+    </main>
+
+    <footer>
+      &copy; 2016 Laura Sammons | Portfolio Projects | LinkedIn
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="scripts/blogArticles.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
+  </body>
+</html>
