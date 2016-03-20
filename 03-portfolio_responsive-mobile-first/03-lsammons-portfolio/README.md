@@ -7,10 +7,6 @@ This portfolio site that will highlight my projects and  interests, and showcase
     - As a visitor, I want the viewport properly sized, so that content fits all the size I have available.
     - As a visitor, I want the primary nav to be responsive, so that I can get around using any device.
 
-  2. As the creator, I want to be able to indicate solo vs team projects in the title of the project. (Add rawData field)
-
-
-
 ## Old Stories: Minimum Viable Product (MVP)
 These user stories will guide my development:
  1. As a developer, I want my site to use valid and semantic markup, so that employers will love me.
@@ -31,4 +27,8 @@ These user stories will guide my development:
 4.  As a reader, I want project descriptions truncated to the first paragraph so that I can easily scroll though the whole list.
   - As a reader, I want to click the "More" button so that I can expand the entire description.
   - As a reader, I want projects filterable by category so that I can review just the things that interest me.
-  - As a reader, I want the portfolio to use a nice color scheme, so that it stands out visually.                             
+  - As a reader, I want the portfolio to use a nice color scheme, so that it stands out visually.  
+                             
+## TODO:
+  1. As the creator, I want to be able to indicate solo vs team projects in the title of the project. (Add rawData field)
+    - As the creator, I want the publish date to reflect months and years, not days.

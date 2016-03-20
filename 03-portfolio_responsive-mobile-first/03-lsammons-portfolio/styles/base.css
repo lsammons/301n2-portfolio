@@ -4,35 +4,30 @@ body {
 	height: auto;
 	font-family: Georgia, sans-serif;
 	color:#373648;
-	background-color:#EEEFE5;
-}
-.center-body {
-    margin: auto;
-    width: 90%;
-    /*border: 3px solid #73AD21;*/
-    padding: 0 2em 0 2em;
+	background-color:#EEEFE5; /*light green*/
 }
 .article-body {
   clear: both;
   margin-bottom: 2em;
 }
-
+.site-header {
+	background-color:#D3D3D3; /* lightgray */
+	padding: 0 0 0 2em;
+}
+main {
+	padding: 0 2em 0 2em;
+}
+footer {
+	padding: 0 2em 0 2em;
+}
 hr {
   margin: 1em;
   width: 80%;
 }
 img {
-  max-width: 100%; /* do not exceed container width */
+  max-width: 100%; /* does not exceed container width */
   padding: 2em;
 }
-
-
-
-  .heading-group-h1 {
-    background-color:#D3D3D3;
-  }
-
-
 
 /*TEXT STYLES
 =======================================*/
@@ -47,7 +42,6 @@ footer {
 p {
   font-size: 1em;
 }
-
 address {
   display: inline-block;
 }

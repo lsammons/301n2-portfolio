@@ -1,4 +1,4 @@
-var projects = [];  // articles 1
+var projects = []; 
 
 function Project (opts) {
   this.author = opts.author;
@@ -34,9 +34,9 @@ rawData.sort(function(a,b) {
 });
 
 rawData.forEach(function(ele) {
-  projects.push(new Project(ele));  // articles 2
+  projects.push(new Project(ele));
 })
 
-projects.forEach(function(a){       // articles 3
-  $('#projects').append(a.toHtml()) // articles 4
+projects.forEach(function(a){
+  $('#projects').append(a.toHtml())
 });
