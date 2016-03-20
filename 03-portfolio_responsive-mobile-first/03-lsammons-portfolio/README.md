@@ -1,30 +1,14 @@
-# Static MVC Blog
+# Laura Sammons
+# Web Design and Web Development Portfolio / MVC Blog
+This portfolio site that will highlight my projects and  interests, and showcase my skills to potential employers or clients. It will represent my personal online presence.
 
-# LAURA TODO: add user stories
-
-This is a simple blogging system front end. The code is organized with MVC principles in mind.
-
-It starts small, but will be gaining new features regularly.
-
-With a pair, make the blog responsive, so it hides the main navigation menu under a "Hamburger" link on small screens, and unfurls to a row of tab-like links on larger screens.
-
-Then, see how you can apply these same ideas in your portfolio!
-
-## Helpful Resources
- - Shay Howe's Intro: http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
- - Dale Sande's RWD: http://www.anotheruiguy.com/ux-design-dev/_book/rwd/README.html
- - Example extra-fancy responsive hamburger: http://www.sitepoint.com/pure-css-off-screen-navigation-menu/
-~       
+# New User Stories:Mobile-First and Responsive Design
+  1. As a visitor, I want the images to be responsive, so that content stays properly proportioned.
+  2. As a visitor, I want the viewport properly sized, so that content fits all the size I have available.
+  3. As a visitor, I want the primary nav to be responsive, so that I can get around using any device.
 
 
-# Laura Sammons professional online presence
-# Web Design and Web Development Portfolio
-
-This portfolio site that will highlight my projects and  interests, and showcase my skills to potential employers or clients.
-
-This will be a static portfolio site to represent my personal online presence.
-
-## User Stories: Minimum Viable Product (MVP)
+## Old Stories: Minimum Viable Product (MVP)
 These user stories will guide my development:
  1. As a developer, I want my site to use valid and semantic markup, so that employers will love me.
   - As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it, and abstract out the details for individual projects.
