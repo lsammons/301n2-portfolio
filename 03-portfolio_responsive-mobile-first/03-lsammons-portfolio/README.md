@@ -4,8 +4,11 @@ This portfolio site that will highlight my projects and  interests, and showcase
 
 # New User Stories:Mobile-First and Responsive Design
   1. As a visitor, I want the images to be responsive, so that content stays properly proportioned.
-  2. As a visitor, I want the viewport properly sized, so that content fits all the size I have available.
-  3. As a visitor, I want the primary nav to be responsive, so that I can get around using any device.
+    - As a visitor, I want the viewport properly sized, so that content fits all the size I have available.
+    - As a visitor, I want the primary nav to be responsive, so that I can get around using any device.
+
+  2. As the creator, I want to be able to indicate solo vs team projects in the title of the project. 
+
 
 
 ## Old Stories: Minimum Viable Product (MVP)
