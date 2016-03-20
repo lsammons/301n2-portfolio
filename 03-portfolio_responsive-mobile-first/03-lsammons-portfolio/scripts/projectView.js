@@ -1,5 +1,5 @@
 // Configure a view object, to hold all our functions for dynamic updates
-//and article-related event handlers.
+//and project-related event handlers.
 var projectView = {};
 
 projectView.populateFilters = function() {
@@ -56,7 +56,7 @@ projectView.handleMainNav = function() {
 projectView.setTeasers = function() {
   $('.article-body *:nth-of-type(n+2)').hide(); // Hide elements beyond the first 2 in any artcile body.
 
-  $('#articles').on('click', 'a.read-on', function(e) {
+  $('#projects').on('click', 'a.read-on', function(e) {  // articles 5
     e.preventDefault();
     $(this).parent().find('*').fadeIn();
     $(this).hide();
