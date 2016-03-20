@@ -7,7 +7,7 @@ This portfolio site that will highlight my projects and  interests, and showcase
     - As a visitor, I want the viewport properly sized, so that content fits all the size I have available.
     - As a visitor, I want the primary nav to be responsive, so that I can get around using any device.
 
-  2. As the creator, I want to be able to indicate solo vs team projects in the title of the project. 
+  2. As the creator, I want to be able to indicate solo vs team projects in the title of the project. (Add rawData field)
 
 
 
