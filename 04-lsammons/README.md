@@ -4,7 +4,6 @@
 
 1. As a developer, I want to use Handlebars for my project template, so that I can include new projects more easily.
   - As a developer, I want my CSS styles to follow SMACSS organization, so that I know where to look for creating and editing styles.
-
 2. As a visitor, I want the site to use great typography, so that I have an enjoyable reading experience.
 
 #TODO:
@@ -17,3 +16,9 @@
  ## TODO:
    1. As the creator, I want to be able to indicate solo vs team projects in the title of the project. (Add rawData field)
      - As the creator, I want the publish date to reflect months and years, not days.
+   2. As the creator, I want the header image to display full-screen and adapt to the screen size.
+    - As the creator, I want to fonts to wrap for each screen size and stay comprehensible.
+    - When in larger sizes, I want the modules to line up horizontally.
+    - style the filter choice box...
+
+  MODULES -- each portfolio project is a "module" of project... 
