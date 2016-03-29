@@ -81,3 +81,7 @@
    border-bottom: none;
  }
 }
+
+article {
+  background-color: red;
+}
