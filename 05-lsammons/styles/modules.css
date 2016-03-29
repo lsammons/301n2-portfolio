@@ -1,5 +1,5 @@
 /* DONE: Float the main header to the left, to make room for the hamburger menu. */
-.heading-group-h1 {
+/*.heading-group-h1 {
   float: left;
   padding: 0 0 .2em 1em;
 }
@@ -49,4 +49,4 @@ nav.main-nav.icon-menu::before {
 .byline a {
   font-weight: bold;
   text-decoration: none;
-}
+}*/

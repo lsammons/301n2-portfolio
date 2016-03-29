@@ -1,16 +1,31 @@
-/* base styles apply to all dynamic states of site */
+/***********************************
+GENERAL
+***********************************/
 html {
 	font-size: 1em;
 	line-height: 1.4;
 }
+/* site body */
 body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size:16px;
-	line-height:22px;
+	/*line-height:22px;*/
 	height: auto;
 	color:#373648;
-	background-color:#EEEFE5; /*light green*/
+	/*background-color:#EEEFE5; */ /*light green*/
+	background-color: #fff;
 }
+/* home page headline font */
+#intro {
+	font-family: 'Amatic SC', Arial; font-weight: 700;
+	/*font-size:5em;*/
+}
+/* link styles */
+a:link {color: #d76713; text-decoration:none;}
+a:visited {color: #d76713; text-decoration:none;}
+a:hover, a:focus {color: #813107; text-decoration:none;}
+a:active {color: #d76713; text-decoration:none;}
+
 hr {
     display: block;
     height: 1px;
@@ -19,28 +34,36 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-.article-body {
+
+/***********************************
+HEADER AND NAV
+***********************************/
+/* black header, top h1 and h2 layout, background and text colors */
+.heading-group-h1 {
+	text-align: center;
+	margin: 0;
+	background-color: #000;
+	color: #fff;
+}
+/* nav block background color on mobile */
+nav {
+  background-color: #000;
+}
+/* nav links */
+nav a:link, nav a:visited, a:active {color: #fff; text-decoration:none;}
+nav a:hover, nav a:focus {color: #d76713; text-decoration:none;}
+
+
+/*.article-body {
   clear: both;
   margin-bottom: 2em;
-}
-.site-header {
-	/*background-image: url("../../img/sutro-ruins_v01.jpg");*/
-	background-color:#D3D3D3; /* lightgray */
-	padding: 0 0 0 2em;
-}
-main {
-	padding: 0 2em 0 2em;
-}
-footer {
-	padding: 0 2em 0 2em;
-}
-/*hr {
-  margin: 1em;
-  width: 80%;
 }*/
+
+
 img {
-  max-width: 100%; /* does not exceed container width */
-  padding: 2em;
+	/* does not exceed container width */
+  /*max-width: 100%;
+  padding: 2em;*/
 }
 
 /* SITE COLOR STYLES
@@ -49,16 +72,12 @@ img {
 /*TEXT STYLES
 =======================================*/
 h1 {
-	font-size:2em;
+	/*font-size:2em;
 	line-height:1.5em;
-	color:#D56724;
+	color:#D56724;*/
 }
-/* home page headline font */
-#intro {
-	font-family: 'Amatic SC', cursive;; font-weight: 700;
-	font-size:5em;
-}
-h2 {
+
+/*h2 {
 	font-size:1.5em;
 	line-height:1.25em;
 }
@@ -73,11 +92,4 @@ address {
 }
 footer {
   margin-top: 2em;
-}
-
-/*LINK STYLES
-=======================================*/
-a:link {color: #d76713; text-decoration:none;}
-a:visited {color: #d76713; text-decoration:none;}
-a:hover, a:focus {color: #813107; text-decoration:none;}
-a:active {color: #d76713; text-decoration:none;}
+}*/

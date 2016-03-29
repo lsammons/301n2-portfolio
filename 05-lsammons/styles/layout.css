@@ -1,6 +1,17 @@
-/* Layout Styles - for media queries
+/* Layout Styles
 ***********************/
-.pull-left {
+/* BASE LAYOUT:
+  body content width should only be 940px across,
+  could potentially be smaller than that. */
+#wrapper {
+	max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  background: orange;
+}
+/* MOBILE-FIRST STYLES */
+
+/*.pull-left {
   float: left;
 }
 .pull-right {
@@ -17,11 +28,11 @@
 #filters select {
   width: 90%;
   margin: .2em 5%;
-}
+}*/
 
 /* <480px width targets mobile */
 @media only screen and (max-width: 480px) {
-  .heading-group-h1 {
+  /*.heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
   }
@@ -34,12 +45,12 @@
   #filters li {
     width: 20em;
     display: inline;
-  }
+  }*/
 }
 
 /* >481px and <900px width targets tablets */
 @media only screen and (min-width: 481px) and (max-width: 900px) {
-  nav.main-nav.icon-menu::before {
+  /*nav.main-nav.icon-menu::before {
     padding: 1em 1em 0 0;
   }
   .heading-group-h1 {
@@ -53,7 +64,7 @@
   #filters li {
     width: 20em;
     display: inline;
-  }
+  }*/
 }
 /* Styles for how things should look on a larger screen:
  - Hide the hamburger.
@@ -62,9 +73,9 @@
  /* @media only screen, desktop */
 
  /* MAKE the portfolio go horizontal 3 at a large size screen */
- 
+
 @media only screen and (min-width: 901px) {
-  .heading-group-h1 {
+  /*.heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
   }
@@ -82,10 +93,5 @@
    list-style: none;
    clear: none;
    border-bottom: none;
- }
-}
-
-/* TESTING COLOR */
-article {
-  /*background-color: red;*/
+ }*/
 }
