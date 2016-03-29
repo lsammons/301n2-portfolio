@@ -1,4 +1,4 @@
-/* Layout Styles - media queries
+/* Layout Styles - for media queries
 ***********************/
 .pull-left {
   float: left;
@@ -60,6 +60,9 @@
  - Main should be all on one row,
  with padding spaced better for a larger screen. */
  /* @media only screen, desktop */
+
+ /* MAKE the portfolio go horizontal 3 at a large size screen */
+ 
 @media only screen and (min-width: 901px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
@@ -82,6 +85,7 @@
  }
 }
 
+/* TESTING COLOR */
 article {
-  background-color: red;
+  /*background-color: red;*/
 }

@@ -1,17 +1,30 @@
+/* base styles apply to all dynamic states of site */
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
 body {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size:16px;
 	line-height:22px;
 	height: auto;
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	color:#373648;
 	background-color:#EEEFE5; /*light green*/
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 .article-body {
   clear: both;
   margin-bottom: 2em;
 }
 .site-header {
-	background-image: url("../../img/sutro-ruins_v01.jpg");
+	/*background-image: url("../../img/sutro-ruins_v01.jpg");*/
 	background-color:#D3D3D3; /* lightgray */
 	padding: 0 0 0 2em;
 }
@@ -21,14 +34,17 @@ main {
 footer {
 	padding: 0 2em 0 2em;
 }
-hr {
+/*hr {
   margin: 1em;
   width: 80%;
-}
+}*/
 img {
   max-width: 100%; /* does not exceed container width */
   padding: 2em;
 }
+
+/* SITE COLOR STYLES
+=======================================*/
 
 /*TEXT STYLES
 =======================================*/
