@@ -26,6 +26,12 @@ a:visited {color: #d76713; text-decoration:none;}
 a:hover, a:focus {color: #813107; text-decoration:none;}
 a:active {color: #d76713; text-decoration:none;}
 
+/* does not exceed container width */
+img {
+  max-width: 100%;
+  /*padding: 2em;*/
+}
+
 hr {
     display: block;
     height: 1px;
@@ -35,16 +41,43 @@ hr {
     padding: 0;
 }
 
+/*h3 {
+	font-size:1.25em;
+	line-height:1em;}
+p {
+  font-size: 1em;
+}*/
+/*address {
+  display: inline-block;
+}*/
+
 /***********************************
 HEADER AND NAV
 ***********************************/
 /* black header, top h1 and h2 layout, background and text colors */
-.heading-group-h1 {
-	text-align: center;
-	margin: 0;
+/* Float the main header to the left, to make room for the hamburger menu. */
+/* .heading-group-h1 */
+.site-header {
+	/*text-align: center;*/
 	background-color: #000;
 	color: #fff;
+	float: left;
+  padding: 0 0 .2em 1em;
 }
+/* .heading-group-h1 h1 */
+.site-header h1 {
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+/* .heading-group-h1 h2 */
+.site-header h2 {
+	font-size: 1.75em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
 /* nav block background color on mobile */
 nav {
   background-color: #000;
@@ -53,43 +86,80 @@ nav {
 nav a:link, nav a:visited, a:active {color: #fff; text-decoration:none;}
 nav a:hover, nav a:focus {color: #d76713; text-decoration:none;}
 
+/***********************************
+ICONS AND NAV
+***********************************/
 
-/*.article-body {
+nav.main-nav.icon-menu::before {
+  float: right;
+}
+.icon-menu::before {
+  font-size: 1.5em;
+}
+
+.main-nav {
+	text-align: center;
+  padding: 0.1em;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
   clear: both;
-  margin-bottom: 2em;
-}*/
-
-
-img {
-	/* does not exceed container width */
-  /*max-width: 100%;
-  padding: 2em;*/
 }
 
-/* SITE COLOR STYLES
-=======================================*/
-
-/*TEXT STYLES
-=======================================*/
-h1 {
-	/*font-size:2em;
-	line-height:1.5em;
-	color:#D56724;*/
+.main-nav:hover ul {
+  display: block;
 }
 
-/*h2 {
-	font-size:1.5em;
-	line-height:1.25em;
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
 }
-h3 {
-	font-size:1.25em;
-	line-height:1em;}
-p {
-  font-size: 1em;
+
+#filters {
+  padding: 0;
+  list-style: none;
 }
-address {
-  display: inline-block;
+
+.template {
+  display: none;
 }
+
+.byline {
+  color: #777;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/***********************************
+FOOTER
+***********************************/
 footer {
-  margin-top: 2em;
-}*/
+  font-size: 0.75em;
+	text-align: center;
+	padding: 25px 0 10px;
+}
+
+/***********************************
+PAGE LAYOUT: PORTFOLIO
+***********************************/
+
+#rawData-template article {
+	margin: 0;
+  padding: 0;
+}
+
+#projects article {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}

@@ -11,7 +11,7 @@
 }
 /* MOBILE-FIRST STYLES */
 
-/*.pull-left {
+.pull-left {
   float: left;
 }
 .pull-right {
@@ -23,12 +23,12 @@
   clear: both;
 }
 .heading-group-h1 {
-  max-width: 80%;
+  /*max-width: 80%;*/
 }
 #filters select {
   width: 90%;
   margin: .2em 5%;
-}*/
+}
 
 /* <480px width targets mobile */
 @media only screen and (max-width: 480px) {
