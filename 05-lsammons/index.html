@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
-    <script id="rawData-template" type="text/x-handlebars-template">
+    <!-- <script id="rawData-template" type="text/x-handlebars-template">
       <article class="{{category}}" data-category="{{category}}" data-author="{{author}}">
           <header>
               <h1>{{title}}</h1>
@@ -24,6 +24,23 @@
            <section class="article-body">{{{body}}}</section>
            <a href="#" class="read-on">Read on &rarr;</a>
            <hr>
+      </article>
+    </script> -->
+
+    <script id="rawData-template" type="text/x-handlebars-template">
+      <article class="{{category}}" data-category="{{category}}" data-author="{{author}}">
+          <header>
+              <!-- <h1>{{title}}</h1> -->
+              <h3>{{title}}</h3>
+              <div class="byline">
+               <!-- for <address><a href="{{clientUrl}}">{{client}}</a></address> -->
+               <!-- <time pubdate datetime="2000-01-01">{{publishStatus}}</time><br> -->
+               <!-- Creatives: <span>{{creativeTeam}}</span> -->
+               </div>
+           </header>
+           <section class="article-body">{{{body}}}</section>
+           <!-- <a href="#" class="read-on">Read on &rarr;</a>
+           <hr> -->
       </article>
     </script>
 
@@ -86,7 +103,7 @@
 
       </main>
 
-      <footer>
+      <footer class="clearfix">
         &copy; 2016 Laura Sammons | Portfolio Projects | LinkedIn
       </footer>
 
