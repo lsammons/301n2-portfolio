@@ -1,6 +1,65 @@
-/***********************************
+/**********************************
 GENERAL
 ***********************************/
+/* for site-wide styles, at a pervasive level */
+
+/*#wrapper body content width should only be 940px across,
+could potentially be smaller than that. */
+#wrapper {
+	max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  /*background: orange;*/
+}
+a {
+  text-decoration: none;
+}
+/* img responsive - does not exceed container width */
+img {
+  max-width: 100%;
+  /*padding: 2em;*/
+}
+
+
+/* leave three spaces */
+/**********************************
+HEADING
+***********************************/
+/* Float the main header to the left, to make room for the hamburger menu. */
+/* home page headline fonts */
+.heading-group-h1 {
+	text-align: center;
+	/*margin: 0;*/
+	/*float: left;*/
+}
+.heading-group-h1 h1 {
+	font-family: 'Ubuntu', Arial, sans-serif;
+	margin: 0;  /*reduces upper & lower margins on the h1 */
+}
+
+.heading-group-h1 h2 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+/* home page of this site */
+
+
+/**********************************
+COLORS
+***********************************/
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+
+
 html {
 	font-size: 1em;
 	line-height: 1.4;
@@ -11,26 +70,18 @@ body {
 	font-size: 1em;
 	/*line-height:22px;*/
 	height: auto;
-	color:#373648;
+	color:#373648; /* orange */
 	/*background-color:#EEEFE5; */ /*light green*/
-	background-color: #fff;
+	background-color: #fff; /*white*/
 }
-/* home page headline font */
-#intro {
-	font-family: 'Amatic SC', Arial; font-weight: 700;
-	/*font-size:5em;*/
-}
+
 /* link styles */
 a:link {color: #d76713; text-decoration:none;}
 a:visited {color: #d76713; text-decoration:none;}
 a:hover, a:focus {color: #813107; text-decoration:none;}
 a:active {color: #d76713; text-decoration:none;}
 
-/* does not exceed container width */
-img {
-  max-width: 100%;
-  /*padding: 2em;*/
-}
+
 
 hr {
     display: block;
@@ -54,16 +105,7 @@ p {
 /***********************************
 HEADER AND NAV
 ***********************************/
-/* black header, top h1 and h2 layout, background and text colors */
-/* Float the main header to the left, to make room for the hamburger menu. */
- .heading-group-h1 {
-/*.site-header {*/
-	text-align: center;
-	background-color: #000;
-	color: #fff;
-	float: left;
-  padding: 0 0 .2em 1em;
-}
+
 /* .heading-group-h1 h1 */
 .site-header h1 {
 	/*margin: 15px 0;
@@ -74,13 +116,12 @@ HEADER AND NAV
 /* .heading-group-h1 h2 */
 .site-header h2 {
 	/*font-size: 1.75em;*/
-	margin: -5px 0 0;
-	font-weight: normal;
+
 }
 
 /* nav block background color on mobile */
 nav {
-  background-color: #000;
+  background-color: #000; /* black */
 }
 /* nav links */
 nav a:link, nav a:visited, a:active {color: #fff; text-decoration:none;}
@@ -162,4 +203,26 @@ PAGE LAYOUT: PORTFOLIO
   margin: 2.5%;
   background-color: #f5f5f5;
   color: #bdc3c7;
+}
+
+
+/* MOBILE-FIRST STYLES */
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.heading-group-h1 {
+  /*max-width: 80%;*/
+}
+#filters select {
+  width: 90%;
+  margin: .2em 5%;
 }

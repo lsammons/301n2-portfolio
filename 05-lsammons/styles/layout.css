@@ -1,47 +1,24 @@
-/* Layout Styles
-***********************/
-/* BASE LAYOUT:
-  body content width should only be 940px across,
-  could potentially be smaller than that. */
-#wrapper {
-	max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-  background: orange;
-}
-/* MOBILE-FIRST STYLES */
+/* LAYOUT STYLES ARE FOR MEDIA QUERIES */
 
-.pull-left {
-  float: left;
-}
-.pull-right {
-  float: right;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.heading-group-h1 {
-  /*max-width: 80%;*/
-}
-#filters select {
-  width: 90%;
-  margin: .2em 5%;
+@media only screen and (max-width: 270px) {
+	.main-nav {
+		padding-right: 45%; /* when it gets tiny, hamburg menu goes to middle */
+	}
 }
 
 /* <480px width targets mobile */
 @media only screen and (max-width: 480px) {
-  /*.heading-group-h1 {
-    padding: .1em .1em .1em 2em;
-    float: none;
-  }
+	.heading-group-h1 {
+		/*text-align: center;*/
+		padding-left: 0.5em;
+		float: left;
+	}
 
-  #filters select {
+  /*#filters select {
     width: 15em;
     margin: .2em .2em;
-  }
-
+  }*/
+/*
   #filters li {
     width: 20em;
     display: inline;
