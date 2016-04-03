@@ -1,34 +1,36 @@
 /* MOBILE FIRST LAYOUT STYLES */
 /**********************************
-GENERAL - 1
+GENERAL - 1 - for site-wide styles
 ***********************************/
-/* for site-wide styles, at a pervasive level */
-
-/*#wrapper body content width should only be 940px across,
-could potentially be smaller than that. */
+body {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
 #wrapper {
 	max-width: 940px;
   margin: 0 auto;
-  padding: 0 5%;
-  /*background: orange;*/
+  padding: 0 5%; /*flex layout*/
+	/*background: orange;*/
 }
 a {
   text-decoration: none;
 }
-/* img responsive - does not exceed container width */
 img {
-  max-width: 100%;
-  /*padding: 2em;*/
+  max-width: 100%; /*flex images*/
+}
+h3 {
+  margin: 0 0 1em 0; /* bottom margin pushes down 1em */
 }
 
 
-/* leave three spaces */
+
 /**********************************
 HEADING - 2
 ***********************************/
 /* Float the main header to the left, to make room for the hamburger menu. */
 /* home page headline fonts */
 .heading-group-h1 {
+	/*padding-left: 0.5em;
+	float: left;*/
 	text-align: center;
 	/*margin: 0;*/
 	/*float: left;*/
@@ -39,7 +41,7 @@ HEADING - 2
 }
 
 .heading-group-h1 h2 {
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	/*font-family: 'Raleway', Helvetica, Arial, sans-serif;*/
 	margin: -5px 0 0;
 	font-weight: normal;
 }
