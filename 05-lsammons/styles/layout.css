@@ -1,17 +1,24 @@
 /* LAYOUT STYLES ARE FOR MEDIA QUERIES */
 
+/* only for screens from 0 to 270px */
 @media only screen and (max-width: 270px) {
 	.main-nav {
 		padding-right: 45%; /* when it gets tiny, hamburg menu goes to middle */
 	}
+	body {
+		background-color: white;
+	}
 }
 
 /* <480px width targets mobile */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 271px) and (max-width: 480px) {
 	.heading-group-h1 {
 		/*text-align: center;*/
 		padding-left: 0.5em;
 		float: left;
+	}
+	body {
+		background-color: navy;
 	}
 
   /*#filters select {
@@ -25,8 +32,12 @@
   }*/
 }
 
-/* >481px and <900px width targets tablets */
+/* only screens >481px and <900px width - targets tablets */
 @media only screen and (min-width: 481px) and (max-width: 900px) {
+	body {
+		background-color: darkgreen;
+	}
+
   /*nav.main-nav.icon-menu::before {
     padding: 1em 1em 0 0;
   }
@@ -50,8 +61,11 @@
  /* @media only screen, desktop */
 
  /* MAKE the portfolio go horizontal 3 at a large size screen */
-
+/* only screens larger than 901px */
 @media only screen and (min-width: 901px) {
+	body {
+		background-color: orange;
+	}
   /*.heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
