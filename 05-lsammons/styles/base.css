@@ -1,5 +1,6 @@
+/* MOBILE FIRST LAYOUT STYLES */
 /**********************************
-GENERAL
+GENERAL - 1
 ***********************************/
 /* for site-wide styles, at a pervasive level */
 
@@ -23,7 +24,7 @@ img {
 
 /* leave three spaces */
 /**********************************
-HEADING
+HEADING - 2
 ***********************************/
 /* Float the main header to the left, to make room for the hamburger menu. */
 /* home page headline fonts */
@@ -43,20 +44,48 @@ HEADING
 	font-weight: normal;
 }
 
-/**********************************
-PAGE: PORTFOLIO
-***********************************/
-/* home page of this site */
 
 
 /**********************************
-COLORS
+NAVIGATION - 3
 ***********************************/
+
+
+/***********************************
+FOOTER - 4
+***********************************/
+footer {
+  font-size: 0.75em;
+	text-align: center;
+	padding: 25px 0 10px;
+	clear: both;
+}
+
+
+/* home page of this site - my portfolio projects */
+/**********************************
+PAGE: PORTFOLIO - 5
+***********************************/
+
+
+
+/* about page */
+/**********************************
+PAGE: ABOUT - 6
+***********************************/
+
 
 
 /**********************************
-NAVIGATION
+PAGE: CONTACT - 7
 ***********************************/
+
+
+/* colors for ENTIRE site body */
+/**********************************
+COLORS - 8
+***********************************/
+
 
 
 
@@ -179,15 +208,7 @@ nav.main-nav.icon-menu::before {
   text-decoration: none;
 }
 
-/***********************************
-FOOTER
-***********************************/
-footer {
-  font-size: 0.75em;
-	text-align: center;
-	padding: 25px 0 10px;
-	clear: both;
-}
+
 
 /***********************************
 PAGE LAYOUT: PORTFOLIO

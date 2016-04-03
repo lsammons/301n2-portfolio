@@ -6,11 +6,11 @@
 		padding-right: 45%; /* when it gets tiny, hamburg menu goes to middle */
 	}
 	body {
-		background-color: white;
+		background-color: red;
 	}
 }
 
-/* <480px width targets mobile */
+/* >271px to <480px width targets mobile */
 @media only screen and (min-width: 271px) and (max-width: 480px) {
 	.heading-group-h1 {
 		/*text-align: center;*/
