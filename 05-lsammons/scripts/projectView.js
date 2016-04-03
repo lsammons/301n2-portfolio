@@ -69,4 +69,4 @@ $(document).ready(function() {
   projectView.handleAuthorFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
-})
+});
