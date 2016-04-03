@@ -26,3 +26,5 @@
     2. And blog about the new techniques I'm learning, old techniques. I could share tips and such.
   7. Add a RESOURCES page to this portfolio.
     1. Link to the places I go to get information about web dev.
+  8. Footer ICONS
+    2. include those as CSS bg, or iconmoons
