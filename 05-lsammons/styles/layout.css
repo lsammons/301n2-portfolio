@@ -1,6 +1,6 @@
 /* LAYOUT STYLES ARE FOR MEDIA QUERIES */
 
-/* only for screens from 0 to 270px */
+/* only for screens from 0 to 270px, smartphone vertical */
 @media only screen and (max-width: 270px) {
 	.main-nav {
 		padding-right: 45%; /* when it gets tiny, hamburg menu goes to middle */
@@ -10,16 +10,16 @@
 	}
 }
 
-/* >271px to <480px width targets mobile */
+/* >271px to <480px width targets mobile, smartphone landscape */
 @media only screen and (min-width: 271px) and (max-width: 480px) {
 	.heading-group-h1 {
 		/*text-align: center;*/
 		padding-left: 0.5em;
 		float: left;
 	}
-	body {
+	/*body {
 		background-color: navy;
-	}
+	}*/
 
   /*#filters select {
     width: 15em;
@@ -34,8 +34,11 @@
 
 /* only screens >481px and <900px width - targets tablets */
 @media only screen and (min-width: 481px) and (max-width: 900px) {
-	body {
+	/*body {
 		background-color: darkgreen;
+	}*/
+	.heading-group-h1 {
+		text-align: center;
 	}
 
   /*nav.main-nav.icon-menu::before {
@@ -66,9 +69,10 @@
 	body {
 		background-color: orange;
 	}
-  /*.heading-group-h1 {
-    padding: .1em .1em .1em 2em;
-    float: none;
+  .heading-group-h1 {
+		text-align: center;
+    /*padding: .1em .1em .1em 2em;
+    float: none;*/
   }
   nav.main-nav.icon-menu::before {
     display: none;
@@ -84,5 +88,5 @@
    list-style: none;
    clear: none;
    border-bottom: none;
- }*/
+ }
 }
