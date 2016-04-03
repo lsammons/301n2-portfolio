@@ -17,12 +17,12 @@ Project.prototype.toHtml = function() {
   this.publishStatus = this.createdOn ? '- created ' + this.daysAgo + ' days ago' : '(comp/spec)';
   this.creativeTeam = this.creatives;
   return finishedTemplate(this);
-}
+};
 
 rawData.forEach(function(ele) {
   projects.push(new Project(ele));
-})
+});
 
 projects.forEach(function(a){
-  $('#projects').append(a.toHtml())
+  $('#projects').append(a.toHtml());
 });
