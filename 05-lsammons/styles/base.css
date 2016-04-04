@@ -1,18 +1,30 @@
 /* MOBILE FIRST LAYOUT STYLES */
+/* screens smaller than 480px width targets  are mobile vertical, smartphone landscape */
+
 /**********************************
-GENERAL - 1 - for site-wide styles
+GENERAL
 ***********************************/
+
 body {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  /* gives about page nice line spacing in paragraphs */
+  /*line-height: 1.4; */ /* this needs to go elsewhere */
 }
 #wrapper {
-	max-width: 940px;
+	max-width: 940px; /* body will not be wide than 940px */
   margin: 0 auto;
   padding: 0 5%; /*flex layout*/
-	/*background: orange;*/
 }
 a {
   text-decoration: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 img {
   max-width: 100%; /*flex images*/
@@ -21,29 +33,38 @@ h3 {
   margin: 0 0 1em 0; /* bottom margin pushes down 1em */
 }
 
+/* positioning styles */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 /**********************************
-HEADING - 2
+HEADING - 2 - header in mobile view - hamburger menu mouseover
+for screens less than 480 pixels wide
 ***********************************/
 /* Float the main header to the left, to make room for the hamburger menu. */
-/* home page headline fonts */
 .heading-group-h1 {
-	/*padding-left: 0.5em;
-	float: left;*/
-	text-align: center;
-	/*margin: 0;*/
-	/*float: left;*/
+  float: left;
+  /*margin: 0 0 30px 0;*/
+  padding: 5px 0 5px 10px;
+  width: 80%;
+  border-bottom: solid black 1px;
 }
 .heading-group-h1 h1 {
 	font-family: 'Ubuntu', Arial, sans-serif;
-	margin: 0;  /*reduces upper & lower margins on the h1 */
+	margin: 10px 0 10px 0;  /*reduces upper & lower margins on the h1 */
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
 }
 
 .heading-group-h1 h2 {
-	/*font-family: 'Raleway', Helvetica, Arial, sans-serif;*/
-	margin: -5px 0 0;
+	margin: -5px 0 0; /* negative top margin, brings h2 up closer to h1 */
 	font-weight: normal;
+  font-size: 1.25em;
 }
 
 
@@ -51,6 +72,66 @@ HEADING - 2
 /**********************************
 NAVIGATION - 3
 ***********************************/
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+.main-nav:hover ul {
+  display: block;
+}
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.1em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ICONS ATTACHED BEFORE NAV TEXT */
+nav.main-nav.icon-menu::before {
+  margin: 10px 10px 0 0;
+  float: right;
+}
+/* hamburger menu placement in mobile view */
+.icon-menu::before {
+  font-size: 1.5em;
+}
+/* drop down navigation in mobile view */
+.main-nav {
+	text-align: right;
+  padding: 0.1em;
+}
+
+
+
+/**********************************
+FILTERS - 3
+***********************************/
+#filters {
+  padding: 0;
+  list-style: none;
+}
+#filters select {
+  width: 60%;
+  margin: .2em 5%;
+}
+
+/**********************************
+HANDLEBARS TEMPLATE TEXT STYLES
+***********************************/
+
+.template {
+  display: none;
+}
+/*.byline {
+  color: #777;
+}
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}*/
+
 
 
 /***********************************
@@ -68,154 +149,6 @@ footer {
 /**********************************
 PAGE: PORTFOLIO - 5
 ***********************************/
-
-
-
-/* about page */
-/**********************************
-PAGE: ABOUT - 6
-***********************************/
-
-
-
-/**********************************
-PAGE: CONTACT - 7
-***********************************/
-
-
-/* colors for ENTIRE site body */
-/**********************************
-COLORS - 8
-***********************************/
-
-
-
-
-html {
-	font-size: 1em;
-	line-height: 1.4;
-}
-/* site body */
-body {
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	/*line-height:22px;*/
-	height: auto;
-	color:#373648; /* orange */
-	/*background-color:#EEEFE5; */ /*light green*/
-	background-color: #fff; /*white*/
-}
-
-/* link styles */
-a:link {color: #d76713; text-decoration:none;}
-a:visited {color: #d76713; text-decoration:none;}
-a:hover, a:focus {color: #813107; text-decoration:none;}
-a:active {color: #d76713; text-decoration:none;}
-
-
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*h3 {
-	font-size:1.25em;
-	line-height:1em;}
-p {
-  font-size: 1em;
-}*/
-/*address {
-  display: inline-block;
-}*/
-
-/***********************************
-HEADER AND NAV
-***********************************/
-
-/* .heading-group-h1 h1 */
-.site-header h1 {
-	/*margin: 15px 0;
-	font-size: 1.75em;
-	font-weight: normal;
-	line-height: 0.8em;*/
-}
-/* .heading-group-h1 h2 */
-.site-header h2 {
-	/*font-size: 1.75em;*/
-
-}
-
-/* nav block background color on mobile */
-nav {
-  background-color: #000; /* black */
-}
-/* nav links */
-nav a:link, nav a:visited, a:active {color: #fff; text-decoration:none;}
-nav a:hover, nav a:focus {color: #d76713; text-decoration:none;}
-
-/***********************************
-ICONS AND NAV
-***********************************/
-
-nav.main-nav.icon-menu::before {
-  float: right;
-}
-.icon-menu::before {
-  font-size: 1.5em;
-}
-
-.main-nav {
-	text-align: center;
-  padding: 0.1em;
-}
-
-.main-nav ul {
-  display: none;
-  padding: 0;
-  list-style: none;
-  clear: both;
-}
-
-.main-nav:hover ul {
-  display: block;
-}
-
-.main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
-  padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
-}
-
-#filters {
-  padding: 0;
-  list-style: none;
-}
-
-.template {
-  display: none;
-}
-
-.byline {
-  color: #777;
-}
-
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-
-
-/***********************************
-PAGE LAYOUT: PORTFOLIO
-***********************************/
-
 #rawData-template article {
 	margin: 0;
   padding: 0;
@@ -230,23 +163,42 @@ PAGE LAYOUT: PORTFOLIO
 }
 
 
-/* MOBILE-FIRST STYLES */
+/* about page */
+/**********************************
+PAGE: ABOUT - 6
+***********************************/
 
-.pull-left {
-  float: left;
+
+/*h3 {
+	font-size:1.25em;
+	line-height:1em;}
+p {
+  font-size: 1em;
+}*/
+/*address {
+  display: inline-block;
+}*/
+
+
+/* colors for ENTIRE site body */
+/**********************************
+COLORS - 8
+***********************************/
+body {
+  background-color: #fff; /* white */
 }
-.pull-right {
-  float: right;
+
+a:link {color: #d76713;}
+a:visited {color: #d76713;}
+a:hover, a:focus {color: #813107;}
+a:active {color: #d76713;}
+
+/* nav block background color on mobile */
+nav {
+  /*background-color: #000; /* black */*/
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.heading-group-h1 {
-  /*max-width: 80%;*/
-}
-#filters select {
-  width: 90%;
-  margin: .2em 5%;
-}
+/* colors for nav link */
+nav a:link, nav a:visited, a:active {color: #000;} /* black */
+nav a:hover, nav a:focus {color: #d76713;} /* orange for hover state in nav */
+/* how to select nav colors for page it is on? */
+/* nav a.selected, nav a:hover  */
