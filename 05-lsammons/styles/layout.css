@@ -1,7 +1,10 @@
 /* LAYOUT STYLES ARE FOR MEDIA QUERIES */
 /* mobile styles are in base.css */
 
-/* only screens >481px and <900px width - targets tablets */
+/**********************************
+LAYOUTS FROM 481 to 900px
+***********************************/
+
 @media only screen and (min-width: 481px) and (max-width: 900px) {
 
 	.heading-group-h1 {
@@ -47,18 +50,13 @@
     display: inline;
   }*/
 }
-/* Styles for how things should look on a larger screen:
- - Hide the hamburger.
- - Main should be all on one row,
- with padding spaced better for a larger screen. */
- /* @media only screen, desktop */
 
- /* MAKE the portfolio go horizontal 3 at a large size screen */
-/* only screens larger than 901px */
+/**********************************
+LARGER THAN 901 PX
+***********************************/
+
 @media only screen and (min-width: 901px) {
-	/*body {
-		background-color: orange;
-	}*/
+
   .heading-group-h1 {
 		text-align: center;
     padding: .1em .1em .1em 2em;
@@ -73,17 +71,18 @@
 		font-size: 1.7em;
 		margin: 25px 0 10px 0;
 		padding-left: 25%;
-		color: green;
 	}
 
   nav.main-nav.icon-menu::before {
     display: none;
   }
+
   nav.main-nav.icon-menu ul {
     display: inline-block;
        float: left;
        margin-left: 10em;
-     }
+  }
+	
  .main-nav li {
    display: inline-block;
    padding: 0 3em 0 0;
