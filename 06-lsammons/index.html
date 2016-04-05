@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Laura Sammons | Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Ubuntu:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <!--HANDLEBARS TEMPLATE-->
+    <script id="rawData-template" type="text/x-handlebars-template">
+      <div id="aProject">
+        <article class="{{category}}" data-category="{{category}}" data-author="{{author}}">
+            <header>
+                <!-- <h1>{{title}}</h1> -->
+                <h3>{{title}}</h3>
+                <div class="byline">
+                 <!-- for <address><a href="{{clientUrl}}">{{client}}</a></address> -->
+                 <!-- <time pubdate datetime="2000-01-01">{{publishStatus}}</time><br> -->
+                 <!-- Creatives: <span>{{creativeTeam}}</span> -->
+                 </div>
+             </header>
+             <section class="article-body">{{{body}}}</section>
+             <a href="#" class="read-on">Read on &rarr;</a>
+             <hr>
+        </article>
+      </div>
+    </script>
+  </head>
+
+  <body>
+  <!--CodeFellows 301: 05 Portfolio Assingment, late 20160404 -->
+    <header class="site-header clearfix">
+      <section class="heading-group-h1">
+        <h1>Laura Sammons</h1>
+        <h2>web developer</h2>
+      </section>
+
+      <nav class="main-nav icon-menu">
+        <ul>
+          <li class="tab" data-content="projects"><a href="#" class="icon-home"> Home</a></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+          <li><a href="http://linkedin.com/in/laurasammons" target="_blank" class="icon-power"> LinkedIn</a></li>
+          <li><a href="http://github.com/lsammons" target="_blank" class="icon-github"> GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <main>
+
+        <section id="projects" class="tab-content">
+          <div>
+            <h4>Welcome to my portfolio!</h4>
+            <ul id="filters">
+              <li>
+                <select id="category-filter">
+                  <option value="">-- Filter My Projects by Type --</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="about" class="tab-content">
+          <header>
+            <h1>About</h1>
+          </header>
+          <section>
+            <h2>Hello, I'm Laura.</h2>
+              <p>I create beautiful &amp; functional websites for <b>businesses</b>, <b>artists</b>, and <b>regular folks</b>. Here are some of the things I enjoy spending my time on:</p>
+            <ul>
+              <li>Coding Websites</li>
+              <li>Sharing what I've learned</li>
+              <li>Spending time in nature</li>
+              <li>Hanging with my family</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="content-placeholder"></section>
+
+      </main>
+
+      <footer class="clearfix">
+        &copy; 2016 Laura Sammons | Portfolio Projects | LinkedIn
+      </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="scripts/webProjects.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
+  </body>
+</html>
