@@ -28,36 +28,3 @@
     1. Link to the places I go to get information about web dev.
   8. Footer ICONS
     2. include those as CSS bg, or iconmoons
-
-
-<head>
-  <script> #rawData-template
-
-    <article> .category data-category=category
-
-      <header>                                        HANDLEBARS TEMPLATE information FOR projects
-
-<body>
-
-  <header> .site-header .clearfix
-    <section> .heading-group-h1
-      <h1>  THIS IS LOGO NAME and JOB title
-
-    <nav> .main-nav .icon-menu
-      <ul>
-        <li> .tab data-content="projects"           PROJECTS CONTENT
-          <a> .icon-home
-        <li> .tab data-content="about"              ABOUT CONTENT
-          <a> .icon-address-book
-        <li>                                        LINKEDIN
-          <a> .icon-power
-        <li>
-          <a> .icon-github                          GITHUB
-
-    <div> #wrapper
-
-      <main>
-
-        <section> #projects .tab-content
-
-        

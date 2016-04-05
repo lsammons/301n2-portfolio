@@ -1,6 +1,6 @@
 var rawData = [
   {
-    title:       'My Work',
+    title:       'Acme Inc.',
     category:    'eCommerce',
     client:      'Acme Inc',
     clientUrl:   'http://www.example.com',
@@ -9,7 +9,7 @@ var rawData = [
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
   {
-    title:       'My Work',
+    title:       'Swedish',
     category:    'Drupal',
     client:      'Swedish Foundation',
     clientUrl:   'http://www.example.com',
@@ -18,7 +18,7 @@ var rawData = [
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
   {
-    title:       'My Work',
+    title:       'Conservatory',
     category:    'Seattle Conservatory',
     client:      'Laura Sammons',
     clientUrl:   'http://www.example.com',
@@ -27,7 +27,7 @@ var rawData = [
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
   {
-    title:       'My Work',
+    title:       'TPMG',
     category:    'Bootstrap',
     client:      'TPMG',
     clientUrl:   'http://www.example.com',
@@ -36,7 +36,7 @@ var rawData = [
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
   {
-    title:       'My Work',
+    title:       'Samsung Monitors',
     category:    'Samsung Monitor Designs',
     client:      'Regional Lab',
     clientUrl:   'http://www.example.com',
@@ -45,7 +45,7 @@ var rawData = [
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
   {
-    title:       'My Work',
+    title:       'Business Site',
     category:    'Kummer Farm',
     client:      'Solo Project: Laura Sammons',
     clientUrl:   'http://www.example.com',

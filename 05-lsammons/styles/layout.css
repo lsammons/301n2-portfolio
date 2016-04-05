@@ -7,6 +7,7 @@
 		background-color: darkgreen;
 	}*/
 	.heading-group-h1 {
+		float: left;
 		text-align: center;
 	}
 
@@ -16,8 +17,8 @@
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
-  }
-  #filters select {
+  }*/
+  /*#filters select {
     width: 15em;
     margin: .2em .2em;
   }
@@ -37,19 +38,19 @@
 @media only screen and (min-width: 901px) {
 	/*body {
 		background-color: orange;
-	}
+	}*/
   .heading-group-h1 {
 		text-align: center;
     padding: .1em .1em .1em 2em;
     float: none;
-  }*/
-  /*nav.main-nav.icon-menu::before {
+  }
+  nav.main-nav.icon-menu::before {
     display: none;
   }
   nav.main-nav.icon-menu ul {
     display: inline-block;
        float: left;
-       margin-left: 1em;
+       margin-left: 10em;
      }
  .main-nav li {
    display: inline-block;
@@ -57,5 +58,5 @@
    list-style: none;
    clear: none;
    border-bottom: none;
- }*/
+ }
 }
