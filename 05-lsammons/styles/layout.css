@@ -22,33 +22,19 @@ LAYOUTS FROM 481 to 900px
 		padding-left: 20%;
 	}
 
+	/* ICONS ATTACHED BEFORE NAV TEXT */
+	nav.main-nav.icon-menu::before {
+	  margin: 10px 10px 0 0;
+	  float: right;
+	}
 
-	/*article {
+	/* drop down navigation in landscape/tablet view */
+	.main-nav {
+		text-align: right;
+	  padding: 0.1em;
+		font-size: 1.25em;
+	}
 
-	}*/
-	/*#projects article {
-	  float: left;
-	  width: 45%;
-	  margin: 2.5%;
-	  background-color: #f5f5f5;
-	  color: #bdc3c7;
-	}*/
-
-  /*nav.main-nav.icon-menu::before {
-    padding: 1em 1em 0 0;
-  }
-  .heading-group-h1 {
-    padding: .1em .1em .1em 2em;
-    float: none;
-  }*/
-  /*#filters select {
-    width: 15em;
-    margin: .2em .2em;
-  }
-  #filters li {
-    width: 20em;
-    display: inline;
-  }*/
 }
 
 /**********************************
@@ -82,7 +68,7 @@ LARGER THAN 901 PX
        float: left;
        margin-left: 10em;
   }
-	
+
  .main-nav li {
    display: inline-block;
    padding: 0 3em 0 0;
@@ -90,4 +76,5 @@ LARGER THAN 901 PX
    clear: none;
    border-bottom: none;
  }
+
 }
