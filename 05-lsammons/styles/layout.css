@@ -3,13 +3,33 @@
 
 /* only screens >481px and <900px width - targets tablets */
 @media only screen and (min-width: 481px) and (max-width: 900px) {
-	/*body {
-		background-color: darkgreen;
-	}*/
+
 	.heading-group-h1 {
 		float: left;
 		text-align: center;
 	}
+
+	#aProject article {
+	  width: 28.3333%;
+	}
+
+	#projects h4 {
+		font-size: 1.5em;
+		margin: 25px 0 10px 0;
+		padding-left: 20%;
+	}
+
+
+	/*article {
+
+	}*/
+	/*#projects article {
+	  float: left;
+	  width: 45%;
+	  margin: 2.5%;
+	  background-color: #f5f5f5;
+	  color: #bdc3c7;
+	}*/
 
   /*nav.main-nav.icon-menu::before {
     padding: 1em 1em 0 0;
@@ -44,6 +64,18 @@
     padding: .1em .1em .1em 2em;
     float: none;
   }
+
+	#aProject article {
+	  width: 28.3333%;
+	}
+
+	#projects h4 {
+		font-size: 1.7em;
+		margin: 25px 0 10px 0;
+		padding-left: 25%;
+		color: green;
+	}
+
   nav.main-nav.icon-menu::before {
     display: none;
   }

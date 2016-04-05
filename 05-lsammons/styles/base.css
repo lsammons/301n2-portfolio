@@ -50,7 +50,7 @@ header in mobile view - hamburger menu mouseover for screens less than 480 pixel
   /*margin: 0 0 30px 0;*/
   padding: 5px 0 5px 10px;
   width: 80%;
-  border-bottom: solid black 1px;
+  /*border-bottom: solid black 1px;*/
 }
 .heading-group-h1 h1 {
 	font-family: 'Ubuntu', Arial, sans-serif;
@@ -66,6 +66,9 @@ header in mobile view - hamburger menu mouseover for screens less than 480 pixel
   font-size: 1.25em;
 }
 
+#projects {
+	border-top: solid black 1px;
+}
 
 
 /**********************************

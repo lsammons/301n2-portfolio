@@ -30,20 +30,22 @@
 
 <!--HANDLEBARS TEMPLATE-->
     <script id="rawData-template" type="text/x-handlebars-template">
-      <article class="{{category}}" data-category="{{category}}" data-author="{{author}}">
-          <header>
-              <!-- <h1>{{title}}</h1> -->
-              <h3>{{title}}</h3>
-              <div class="byline">
-               <!-- for <address><a href="{{clientUrl}}">{{client}}</a></address> -->
-               <!-- <time pubdate datetime="2000-01-01">{{publishStatus}}</time><br> -->
-               <!-- Creatives: <span>{{creativeTeam}}</span> -->
-               </div>
-           </header>
-           <section class="article-body">{{{body}}}</section>
-           <!-- <a href="#" class="read-on">Read on &rarr;</a>
-           <hr> -->
-      </article>
+      <div id="aProject">
+        <article class="{{category}}" data-category="{{category}}" data-author="{{author}}">
+            <header>
+                <!-- <h1>{{title}}</h1> -->
+                <h3>{{title}}</h3>
+                <div class="byline">
+                 <!-- for <address><a href="{{clientUrl}}">{{client}}</a></address> -->
+                 <!-- <time pubdate datetime="2000-01-01">{{publishStatus}}</time><br> -->
+                 <!-- Creatives: <span>{{creativeTeam}}</span> -->
+                 </div>
+             </header>
+             <section class="article-body">{{{body}}}</section>
+             <a href="#" class="read-on">Read on &rarr;</a>
+             <hr>
+        </article>
+      </div>
     </script>
 
   </head>
@@ -57,7 +59,7 @@
     <!-- could be ID logo, containing header AND nav -->
       <section class="heading-group-h1">
         <h1>Laura Sammons</h1>
-        <h2>developer</h2>
+        <h2>web developer</h2>
       </section>
 
       <nav class="main-nav icon-menu">
@@ -76,7 +78,7 @@
 
         <section id="projects" class="tab-content">
           <div>
-            <p>Welcome to my portfolio!</p>
+            <h4>Welcome to my portfolio!</h4>
             <ul id="filters">
               <li>
                 <select id="category-filter">

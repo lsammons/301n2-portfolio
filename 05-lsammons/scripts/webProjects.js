@@ -36,8 +36,8 @@ var rawData = [
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
   {
-    title:       'Samsung Monitors',
-    category:    'Samsung Monitor Designs',
+    title:       'Samsung Monitor',
+    category:    'Samsung Monitor Designs TPMG',
     client:      'Regional Lab',
     clientUrl:   'http://www.example.com',
     createdOn:   '2013-11-01',
@@ -47,6 +47,15 @@ var rawData = [
   {
     title:       'Business Site',
     category:    'Kummer Farm',
+    client:      'Solo Project: Laura Sammons',
+    clientUrl:   'http://www.example.com',
+    createdOn:   '2012-10-31',
+    creatives:     'Solo Project 2',
+    body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
+  },
+  {
+    title:       'Restaurant YumYum Teriyaki',
+    category:    'Next Test',
     client:      'Solo Project: Laura Sammons',
     clientUrl:   'http://www.example.com',
     createdOn:   '2012-10-31',
