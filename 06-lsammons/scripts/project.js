@@ -36,7 +36,7 @@ Project.prototype.toHtml = function() {
 // that are relevant to the entire "class" of objects that are Articles.
 
 // TODO: This function will take the rawData, how ever it is provided,
-// and use it to instantiate all the articles. This code is moved from elsewhere, and
+// and use it to instantiate all the projects. This code is moved from elsewhere, and
 // encapsulated in a simply-named function for clarity.
 Project.loadAll = function(rawData) {
   rawData.sort(function(a,b) {
@@ -78,13 +78,6 @@ Project.fetchAll = function() {
     });
   }
 };
-
-
-
-
-
-
-
 
 
 
