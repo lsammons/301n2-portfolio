@@ -14,6 +14,7 @@ Technical Requirements and Grading Rubric
   - Be sure to use the correct jQuery method for each AJAX call.
   - Be thoughtful when functions are executed asynchronously. This is a major source of bugs!
 
+ADD BACKUPS of JQUERY and HANDLEBARS in file structure
 
 
 
