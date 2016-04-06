@@ -19,7 +19,7 @@ function Project (opts) {
 Project.all = [];
 
 Project.prototype.toHtml = function() {
-  var template = Handlebars.compile($('#article-template').text());
+  var template = Handlebars.compile($('#rawData-template').text());
   // var myTemplate = $('#rawData-template').html();
   // var finishedTemplate = Handlebars.compile(myTemplate);
   this.daysAgo = parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000);
@@ -69,7 +69,7 @@ Project.fetchAll = function() {
     // then load all the data into Project.all with the .loadAll function above,
     // and then render the index page.
     console.log('hello');
-    $.getJSON('../data/webProjects.json', function( data ) {
+    $.getJSON('../data/hackerIpsum.json', function( data ) {
       localStorage.rawData = JSON.stringify(data);
       Project.loadAll(
         JSON.parse(localStorage.rawData)
