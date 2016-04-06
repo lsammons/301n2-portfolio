@@ -6,15 +6,19 @@
 User Stories: MVP
   - As a developer, I want to store my project data in a .json file, so that I can keep it organized.
   - As a developer, I want to retrieve that source data file asynchronously, so that my app logic gets the data just when I need it.
+
   - User Stories: Stretch Goals
 
-  - As a reader, I only want to have to fetch data when it's updated (and keep it cached locally), so that I don't make unneeded AJAX calls.
+  - As a reader, I only want to have to fetch data when it's updated (and keep it cached locally), so that I don't make unneeded AJAX calls. (eTag)
+
 Technical Requirements and Grading Rubric
   - Continue to follow good SMACSS principles.
   - Be sure to use the correct jQuery method for each AJAX call.
   - Be thoughtful when functions are executed asynchronously. This is a major source of bugs!
 
-ADD BACKUPS of JQUERY and HANDLEBARS in file structure
+
+DONE:
+  ADD BACKUPS of JQUERY and HANDLEBARS in file structure
 
 
 
