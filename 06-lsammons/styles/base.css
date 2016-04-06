@@ -10,6 +10,7 @@ body {
   /*line-height: 1.4; */ /* this needs to go elsewhere */
 }
 #wrapper {
+	background-color: yellow;
 	max-width: 940px; /* body will not be wide than 940px */
   margin: 0 auto;
   padding: 0 5%; /*flex layout*/
