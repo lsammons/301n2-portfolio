@@ -84,21 +84,25 @@
             </ul>
           </section>
         </section>
-
         <section class="content-placeholder"></section>
-
       </main>
-
       <footer class="clearfix">
         &copy; 2016 Laura Sammons | Portfolio Projects | LinkedIn
       </footer>
-
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-    <script src="scripts/webProjects.js"></script>
-    <script src="scripts/project.js"></script>
-    <script src="scripts/projectView.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>if (!window.jQuery) { document.write('<script src="/vendor/scripts/jquery-2.1.4.js"><\/script>'); }</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        <script>if (!window.Handlebars) { document.write('<script src="/vendor/scripts/handlebars.js"><\/script>'); }</script>
+      <script src="/vendor/scripts/marked.js"></script>
+      <script src="scripts/webProjects.js"></script>
+      <script src="/scripts/project.js"></script>
+    <script src="/scripts/projectView.js"></script>
+    <script>
+      // TODO: What model function do we need to call, to initiate the retrieval of data?
+      // Project.fetchAll();
+    </script>
+
   </body>
 </html>
