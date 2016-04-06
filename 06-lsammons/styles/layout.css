@@ -7,7 +7,8 @@ LAYOUTS FROM 481 to 900px
 
 @media only screen and (min-width: 481px) and (max-width: 900px) {
 
-body {background-color: orange;}
+#wrapper {background-color: orange;}
+
 	.heading-group-h1 {
 		float: left;
 		text-align: center;
@@ -43,6 +44,8 @@ LARGER THAN 901 PX
 ***********************************/
 
 @media only screen and (min-width: 901px) {
+
+#wrapper {background-color: green;}
 
   .heading-group-h1 {
 		text-align: center;
