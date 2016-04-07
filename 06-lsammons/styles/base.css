@@ -4,6 +4,9 @@
 /**********************************
 GENERAL
 ***********************************/
+html {
+	background-color: #7F5E26;
+}
 body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
   /* gives about page nice line spacing in paragraphs */
