@@ -14,15 +14,13 @@
     <!--HANDLEBARS TEMPLATE-->
     <script id="rawData-template" type="text/x-handlebars-template">
       <div id="aProject">
-        <article class="{{category}}" data-category="{{category}}" data-author="{{author}}">
+        <article class="{{category}}" data-category="{{category}}">
             <header>
-                <!-- <h1>{{title}}</h1> -->
                 <h3>{{title}}</h3>
-                <a href="{{clientUrl}}"><h3>{{client}}</h3></a>
-                <div class="byline">
-                 for <address><a href="{{clientUrl}}">{{client}}</a></address>
-                 <time pubdate datetime="2000-01-01">{{publishStatus}}</time><br>
-                 Creatives: <span>{{creativeTeam}}</span>
+                <address><a href="{{clientUrl}}"><h3>{{client}}</h3></a></address>
+                <div>
+                 <time pubdate datetime="2000-01-01">{{publishedOn}}</time><br>
+                 <span>{{creatives}}</span>
                  </div>
              </header>
              <section class="article-body">{{{body}}}</section>
@@ -31,8 +29,8 @@
         </article>
       </div>
     </script>
+    <!--END HANDLEBARS-->
   </head>
-
   <body>
   <!--CodeFellows 301: 06 Portfolio Assingment, started 20160405 -->
     <header class="site-header clearfix">
@@ -46,9 +44,6 @@
           <li class="tab" data-content="about"><a href="#" class="icon-home"> Home</a></li>
           <li class="tab" data-content="projects"><a href="#"class="icon-rocket"> Projects</a></li>
           <li class="tab" data-content="contact"><a href="#"class="icon-power"> Contact</a></li>
-          <!-- <li class="tab" data-content="projects"><a href="#" class="icon-home"> Home</a></li>
-          <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li> -->
-
         </ul>
       </nav>
     </header>
@@ -85,7 +80,7 @@
           </section>
         </section>
 
-<!-- NEW PAGE : CONTACT ME -->
+        <!-- NEW PAGE : CONTACT ME -->
         <section id="contact" class="tab-content">
           <header>
             <h1>Contact</h1>
@@ -101,8 +96,7 @@
 
           </section>
         </section>
-  <!-- END CONTACT -->
-
+        <!-- END CONTACT -->
         <section class="content-placeholder"></section>
       </main>
       <footer class="clearfix">
@@ -115,13 +109,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
         <script>if (!window.Handlebars) { document.write('<script src="/vendor/scripts/handlebars.js"><\/script>'); }</script>
       <script src="/vendor/scripts/marked.js"></script>
-      <!-- <script src="scripts/webProjects.js"></script> -->
       <script src="/scripts/project.js"></script>
     <script src="/scripts/projectView.js"></script>
-    <script>
-      // TODO: What model function do we need to call, to initiate the retrieval of data?
-      Project.fetchAll();
-    </script>
-
+    <script>Project.fetchAll();</script>
   </body>
 </html>
