@@ -13,7 +13,7 @@ body {
   /*line-height: 1.4; */ /* this needs to go elsewhere */
 }
 #wrapper {
-	background-color: yellow;
+	/*background-color: yellow;*/
 	max-width: 940px; /* body will not be wide than 940px */
   margin: 0 auto;
   padding: 0 5%; /*flex layout*/
@@ -156,9 +156,24 @@ footer {
 }
 
 
+/**********************************
+PAGE: ABOUT / HOME
+***********************************/
+#about h1 {
+  font-size: 1.5em;
+}
+#about h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+section {
+  line-height: 1.5em;
+}
+
+
 
 /**********************************
-PAGE: HOME / PORTFOLIO
+PAGE: PROJECTS
 ***********************************/
 #rawData-template article {
 	margin: 0;
@@ -175,18 +190,12 @@ PAGE: HOME / PORTFOLIO
 
 
 
+
 /**********************************
-PAGE: ABOUT
+PAGE: CONTACT
 ***********************************/
-#about h1 {
-  font-size: 1.5em;
-}
-#about h2 {
-  font-size: 1.2em;
-  font-weight: normal;
-}
-section {
-  line-height: 1.5em;
+#contact ul {
+  list-style: none;
 }
 
 
@@ -195,7 +204,7 @@ section {
 COLORS
 ***********************************/
 body {
-  background-color: #fff; /* white */
+  background-color: #fff;
 }
 
 a:link {color: #d76713;}
@@ -206,5 +215,3 @@ a:active {color: #d76713;}
 /* colors for nav link */
 nav a:link, nav a:visited, a:active {color: #000;} /* black */
 nav a:hover, nav a:focus {color: #d76713;} /* orange for hover state in nav */
-/* how to select nav colors for page it is on? */
-/* nav a.selected, nav a:hover  */
