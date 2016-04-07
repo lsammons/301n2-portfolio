@@ -50,7 +50,7 @@ header in mobile view - hamburger menu mouseover for screens less than 480 pixel
 ***********************************/
 /* Float the main header to the left, to make room for the hamburger menu. */
 .heading-group-h1 {
-	background-color: #99CDFF;
+	/*background-color: #99CDFF;*/
   float: left;
   /*margin: 0 0 30px 0;*/
   padding: 5px 0 5px 10px;
@@ -149,6 +149,7 @@ article p {
 FOOTER
 ***********************************/
 footer {
+	border-top: solid 1px black;
   font-size: 0.75em;
 	text-align: center;
 	padding: 25px 0 10px;
