@@ -6,7 +6,7 @@ function Project (opts) {
   this.title = opts.title;
   this.category = opts.category;
   this.body = opts.body;
-  this.createdOn = opts.createdOn;
+  this.publishedOn = opts.publishedOn;
   this.creatives = opts.creatives;
 }
 
@@ -22,8 +22,8 @@ Project.prototype.toHtml = function() {
   var template = Handlebars.compile($('#rawData-template').text());
   // var myTemplate = $('#rawData-template').html();
   // var finishedTemplate = Handlebars.compile(myTemplate);
-  this.daysAgo = parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000);
-  this.publishStatus = this.createdOn ? '- created ' + this.daysAgo + ' days ago' : '(comp/spec)';
+  this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
+  this.publishStatus = this.publishedOn ? '- created ' + this.daysAgo + ' days ago' : '(comp/spec)';
   this.creativeTeam = this.creatives;
 
   this.body = marked(this.body); // for marked.js markdown
@@ -69,7 +69,8 @@ Project.fetchAll = function() {
     // then load all the data into Project.all with the .loadAll function above,
     // and then render the index page.
     console.log('hello');
-    $.getJSON('../data/hackerIpsum.json', function( data ) {
+    // $.getJSON('../data/hackerIpsum.json', function( data ) {
+    $.getJSON('../data/webProjects.json', function( data ) {
       localStorage.rawData = JSON.stringify(data);
       Project.loadAll(
         JSON.parse(localStorage.rawData)
