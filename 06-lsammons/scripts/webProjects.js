@@ -26,15 +26,15 @@ var rawData = [
     creatives:     'Solo Project 1',
     body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
   },
-  {
-    title:       'TPMG',
-    category:    'Bootstrap',
-    client:      'TPMG',
-    clientUrl:   'http://www.example.com',
-    createdOn:   '2014-11-02',
-    creatives:     'Web Team C',
-    body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
-  },
+  // {
+  //   title:       'TPMG',
+  //   category:    'Bootstrap',
+  //   client:      'TPMG',
+  //   clientUrl:   'http://www.example.com',
+  //   createdOn:   '2014-11-02',
+  //   creatives:     'Web Team C',
+  //   body:        '<p><img src="./img/1024x768_img-placeholder.png"></p><p>A description of the project goes here.</p>'
+  // },
   {
     title:       'Samsung Monitor',
     category:    'Samsung Monitor Designs TPMG',
