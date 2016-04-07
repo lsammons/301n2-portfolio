@@ -1,46 +1,74 @@
 [
   {
-    "title":       "Acme Inc. 1",
-    "category":    "eCommerce",
-    "client":      " Inc",
+    "title":       "TPMG 1",
+    "category":    "Bootstrap",
+    "client":      " TPMG",
     "clientUrl":   "http://www.example.com",
-    "createdOn":   "2015-11-05",
+    "publishedOn": "2011-03-02",
+    "creatives":   "Laura Sammons (Developer)",
+    "body":        "<p><img src='./img/1024x768_img-placeholder.png'></p><p>A build-out for new LabLink site.</p>"
+  },
+  {
+    "title":       "TPMG Monitors 2",
+    "category":    "Design",
+    "client":      " TPMG",
+    "clientUrl":   "http://www.example.com",
+    "publishedOn":   "2012-03-02",
+    "creatives":   "Laura Sammons (Developer)",
+    "body":        "<p><img src='./img/1024x768_img-placeholder.png'></p><p>Explanation of monitors in lab and designs.</p>"
+  },
+  {
+    "title":       "TPMG 3",
+    "category":    "PHP-HTML-CSS",
+    "client":      "TPMG",
+    "clientUrl":   "http://www.example.com",
+    "publishedOn":   "2016-11-05",
+    "creatives":   "Laura Sammons (Developer)",
+    "body":        "<p><img src='./img/1024x768_img-placeholder.png'></p><p>Show build-outs of pages, worked with internal clients to best present their data. Blood bank, Education. Also home page LabWeek design. Zika?</p>"
+  },
+  {
+    "title":       "Kummer Family Business 4",
+    "category":    "Wordpress",
+    "client":      " Kummer Family",
+    "clientUrl":   "http://www.example.com",
+    "publishedOn":   "2015-11-05",
     "creatives":   "Laura Sammons (Developer)",
     "body":        "<p><img src='.\/img/1024x768_img-placeholder.png'><\/p><p>A description of the project goes here.<\/p>"
   },
   {
-    "title": "Transmitting Open-source Arrays",
-    "category": "firewall",
-    "author": "Dr. Tressie Kuphal",
-    "authorUrl": "http://http://corrine.net",
-    "publishedOn": "2014-01-22",
-    "body": "## The RSS sensor is down, synthesize the open-source sensor so we can synthesize the RSS sensor!\n\ntransmitting "
-  },
-  {
-    "title":       "Acme Inc. 2",
-    "category":    "fdsadf",
-    "client":      " Inc",
+    "title":       "Parish Hill Creamery 5",
+    "category":    "HTML / CSS",
+    "client":      " Rachel Schall",
     "clientUrl":   "http://www.example.com",
-    "createdOn":   "2015-11-05",
+    "publishedOn":   "2015-11-05",
     "creatives":   "Laura Sammons (Developer)",
     "body":        "<p><img src='.\/img/1024x768_img-placeholder.png'><\/p><p>A description of the project goes here.<\/p>"
   },
   {
-    "title":       "Acme Inc. 3",
-    "category":    "gggsdasdf",
-    "client":      " Inc",
+    "title":       "Swedish Foundation 6",
+    "category":    "Drupal",
+    "client":      "Swedish Foundation",
     "clientUrl":   "http://www.example.com",
-    "createdOn":   "2015-11-05",
+    "publishedOn":   "2015-11-05",
     "creatives":   "Laura Sammons (Developer)",
     "body":        "<p><img src='.\/img/1024x768_img-placeholder.png'><\/p><p>A description of the project goes here.<\/p>"
   },
   {
-    "title":       "Acme Inc. 4",
-    "category":    "asdfsdasss",
-    "client":      " Inc",
+    "title":       "Volunteer Park Conservatory 7",
+    "category":    "Wordpress",
+    "client":      "Volunteers for Conservatory",
     "clientUrl":   "http://www.example.com",
-    "createdOn":   "2015-11-05",
+    "publishedOn":   "2015-11-05",
     "creatives":   "Laura Sammons (Developer)",
     "body":        "<p><img src='.\/img/1024x768_img-placeholder.png'><\/p><p>A description of the project goes here.<\/p>"
   },
-   ]
+  {
+    "title":       "Design Spec Business Site 8",
+    "category":    "HTML / CSS",
+    "client":      "Smarty Pants",
+    "clientUrl":   "http://www.example.com",
+    "publishedOn":   "2015-11-05",
+    "creatives":   "Laura Sammons (Developer)",
+    "body":        "<p><img src='.\/img/1024x768_img-placeholder.png'><\/p><p>A description of the project goes here.<\/p>"
+  }
+]
