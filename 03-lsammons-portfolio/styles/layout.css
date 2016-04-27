@@ -1,0 +1,170 @@
+/* Layout Styles - media queries
+***********************/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.heading-group-h1 {
+  max-width: 80%;
+}
+#filters select {
+  width: 90%;
+  margin: .2em 5%;
+}
+
+/* <480px width targets mobile */
+@media only screen and (max-width: 480px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+
+  #filters select {
+    width: 15em;
+    margin: .2em .2em;
+  }
+
+  #filters li {
+    width: 20em;
+    display: inline;
+  }
+}
+
+/* >481px and <900px width targets tablets */
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+  nav.main-nav.icon-menu::before {
+    padding: 1em 1em 0 0;
+  }
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+  #filters select {
+    width: 15em;
+    margin: .2em .2em;
+  }
+  #filters li {
+    width: 20em;
+    display: inline;
+  }
+}
+/* Styles for how things should look on a larger screen:
+ - Hide the hamburger.
+ - Main should be all on one row,
+ with padding spaced better for a larger screen. */
+ /* @media only screen, desktop */
+@media only screen and (min-width: 901px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+  nav.main-nav.icon-menu::before {
+    display: none;
+  }
+  nav.main-nav.icon-menu ul {
+    display: inline-block;
+       float: left;
+       margin-left: 1em;
+     }
+ .main-nav li {
+   display: inline-block;
+   padding: 0 3em 0 0;
+   list-style: none;
+   clear: none;
+   border-bottom: none;
+ }
+}
+/* Layout Styles
+***********************/
+
+/* STYLES FOR MEDIA QUERIES / ADAPTIVE DESIGN */
+/* Layout Styles - media queries
+***********************/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.heading-group-h1 {
+  max-width: 80%;
+}
+#filters select {
+  width: 90%;
+  margin: .2em 5%;
+}
+
+/* <480px width targets mobile */
+@media only screen and (max-width: 480px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+
+  #filters select {
+    width: 15em;
+    margin: .2em .2em;
+  }
+
+  #filters li {
+    width: 20em;
+    display: inline;
+  }
+}
+
+/* >481px and <900px width targets tablets */
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+  nav.main-nav.icon-menu::before {
+    padding: 1em 1em 0 0;
+  }
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+  #filters select {
+    width: 15em;
+    margin: .2em .2em;
+  }
+  #filters li {
+    width: 20em;
+    display: inline;
+  }
+}
+/* Styles for how things should look on a larger screen:
+ - Hide the hamburger.
+ - Main should be all on one row,
+ with padding spaced better for a larger screen. */
+ /* @media only screen, desktop */
+@media only screen and (min-width: 901px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+  nav.main-nav.icon-menu::before {
+    display: none;
+  }
+  nav.main-nav.icon-menu ul {
+    display: inline-block;
+       float: left;
+       margin-left: 1em;
+     }
+ .main-nav li {
+   display: inline-block;
+   padding: 0 3em 0 0;
+   list-style: none;
+   clear: none;
+   border-bottom: none;
+ }
+}
